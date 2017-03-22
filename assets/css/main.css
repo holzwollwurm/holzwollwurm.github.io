@@ -33,6 +33,7 @@ body .scroller span {
   border-bottom-right-radius: 20px;
   transition: all 0.3s;
   cursor: pointer;
+  z-index: 9999;
 }
 .header .header__navigation {
   margin-top: 150px;
@@ -75,19 +76,36 @@ body .scroller span {
 .header .header__navigation li a:hover {
   background: #ffffff;
 }
-.content__wood {
+.content .container {
+  padding-top: 90px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.content h2 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 55px;
+  color: black;
+}
+.content p.content__text {
+  color: black;
+  padding-top: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
+.content .content__wood {
   background: url("../img/content__wood.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
   display: block;
   -webkit-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
 }
-.content__woll {
+.content .content__woll {
   background: url("../img/content__woll.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
   display: block;
   -webkit-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
