@@ -1,6 +1,3 @@
-body {
-  position: relative;
-}
 body .scroller {
   cursor: pointer;
   position: fixed;
@@ -25,13 +22,17 @@ body .scroller span {
   box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
 }
 .header img.header__logo {
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 150px;
   height: 100px;
   background: rgba(255, 255, 255, 0.5);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .header .header__navigation {
   margin-top: 150px;
@@ -48,6 +49,11 @@ body .scroller span {
   width: 100%;
   margin-bottom: 25px;
 }
+@media (max-width: 767px) {
+  .header .header__navigation li {
+    margin-bottom: 10px;
+  }
+}
 .header .header__navigation li a {
   display: block;
   font-family: 'Dancing Script', cursive;
@@ -61,6 +67,11 @@ body .scroller span {
   transition: all 0.3s;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .header .header__navigation li a {
+    padding: 0;
+  }
+}
 .header .header__navigation li a:hover {
   background: #ffffff;
 }
@@ -68,4 +79,17 @@ body .scroller span {
   background: url("../img/content__wood.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
+  display: block;
+  -webkit-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
+}
+.content__woll {
+  background: url("../img/content__woll.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: block;
+  -webkit-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.75);
 }
